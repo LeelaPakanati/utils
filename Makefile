@@ -11,5 +11,5 @@ $(UTILS):
 	rm -f /usr/share/applications/$@.desktop
 	cp ./$@/$@ /usr/bin/
 	chmod a+x /usr/bin/$@
-	cp ./$@/$@.desktop /usr/share/applications/
+	cp ./$@/$@.desktop /usr/share/applications/ 2> /dev/null || :
 	@echo
