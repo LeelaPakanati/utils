@@ -1,4 +1,4 @@
 #! /bin/sh
-a=`ls /home/lee/Pictures/UWBackgrounds/* | shuf -n1`
+a=`ls /home/lee/Pictures/UWBackgrounds/* /home/lee/Pictures/4KBackgrounds/* | shuf -n1`
 b=`ls /home/lee/Pictures/4kPotraitBackgrounds/* | shuf -n1`
 feh --bg-fill $a --bg-fill $b
