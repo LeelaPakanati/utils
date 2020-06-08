@@ -7,8 +7,8 @@ case "$(echo " Suspend\n Shutdown\n Restart\n Logout" | dmenu \
     -sb "#1a1a1a" \
     -t -c -i -p \
     "Power:" -l 4)" in
-        Shutdown) exec systemctl poweroff;;
-        Restart) exec systemctl reboot;;
-        Logout) kill -HUP $XDG_SESSION_PID;;
-        Suspend) exec systemctl suspend;;
+         Shutdown) exec systemctl poweroff;;
+         Restart) exec systemctl reboot;;
+         Logout) kill -HUP $XDG_SESSION_PID;;
+         Suspend) exec systemctl suspend;;
 esac
