@@ -1,6 +1,6 @@
 #!/bin/sh
 
-case "$(echo "Suspend\nShutdown\nRestart\nLogout" | dmenu \
+case "$(echo " Suspend\n Shutdown\n Restart\n Logout" | dmenu \
     -nb black \
     -nf white \
     -sf teal \

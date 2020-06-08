@@ -1,6 +1,6 @@
 [Desktop Entry]
 Version=1.0
 Type=Application
-Name=Power Menu
+Name= Power Menu
 Categories=Utility;
 Exec=power_menu
