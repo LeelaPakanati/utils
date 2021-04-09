@@ -1,0 +1,17 @@
+#!/bin/sh
+
+if [ "$1" == "inc" ]; then
+    xbacklight -inc 1%
+fi
+
+if [ "$1" == "dec" ]; then
+    xbacklight -dec 1%
+fi
+
+BRIGHTNESS=$(xbacklight -get)
+BRIGHTNESS=${BRIGHTNESS%.*}
+NOTI_ID=$(notify-send.py "Brightness: " "$BRIGHTNESS%"  \
+                         --replaces-process "backlightctl" \
+                         --hint string:image-path:video-display boolean:transient:true)
+                         #--action changeValue:abc)
+                                #int:value:$BRIGHTNESS)
